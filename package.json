@@ -1,0 +1,12 @@
+{
+  "name": "simple-mesh-signal",
+  "version": "1.0.0",
+  "description": "A signaling server for simple-mesh",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Justin Maier <just.maier@gmail.com> (https://heyj.us/)",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^6.1.4"
+  }
+}
