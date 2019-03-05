@@ -14,7 +14,7 @@ class SimpleMeshSignal {
         
             socket.wrapper.on('discover', ({ peerName }) => {
                 socket.peerName = peerName;
-                wss.broadcast('discovered', { peerName }, x=>x.peerName === peerName);
+                wss.broadcast('discovered', { peerName }, x=>x.peerName !== peerName);
             });
         
             socket.wrapper.on('signal', ({ peerName, signal }) => {

@@ -1,6 +1,6 @@
 {
   "name": "simple-mesh-signal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A signaling server for simple-mesh",
   "main": "index.js",
   "keywords": [],
