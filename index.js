@@ -1,13 +1,8 @@
 const { WrappedSocketServer, wrapSocket } = require('./WrappedSocketServer');
 
 class SimpleMeshSignal {
-    constructor(options = {port: 8080}){
-        this.options = {
-            port: 8080,
-            ...options
-        };
-
-        const wss = new WrappedSocketServer({ port: this.options.port });
+    constructor(options){
+        const wss = new WrappedSocketServer(options);
         
         wss.on('connection', socket => {
             socket = wrapSocket(socket);
